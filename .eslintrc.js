@@ -1,12 +1,16 @@
 module.exports = {
-    root: true,
-    extends: '@react-native-community',
     env: {
         es6: true,
         jest: true,
         browser: true,
+        es2020: true,
     },
-    extends: ['airbnb', 'prettier', 'prettier/react'],
+    extends: [
+        'plugin:react/recommended',
+        'airbnb',
+        'prettier',
+        'prettier/react',
+    ],
     globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',
@@ -18,37 +22,37 @@ module.exports = {
             jsx: true,
         },
         ecmaVersion: 2018,
-        sourceType: 'module', // pode ser script
+        sourceType: 'module',
     },
     plugins: ['react', 'react-hooks', 'prettier'],
     rules: {
         'prettier/prettier': 'error',
         'react/jsx-filename-extension': [
             'error',
-            { extensions: ['.js', '.jsx'] },
+            {extensions: ['.js', '.jsx']},
         ],
         'import/prefer-default-export': 'off',
-        'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+        'no-unused-vars': ['error', {argsIgnorePattern: '^_'}],
         'react/jsx-one-expression-per-line': 'off',
         'global-require': 'off',
         'react-native/no-raw-text': 'off',
         'no-param-reassign': 'off',
         'no-underscore-dangle': 'off',
         camelcase: 'off',
-        'no-console': ['error', { allow: ['tron'] }],
+        'no-console': ['error', {allow: ['tron']}],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
     },
     settings: {
         'import/resolver': {
-            'node': { //Para resolver erro: 'unable to resolve path to module (eslint)'
-                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            node: {
+                // Para resolver erro: 'unable to resolve path to module (eslint)'
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
             },
             'babel-plugin-root-import': {
                 rootPathSuffix: 'src',
-            // rootPathPrefix: '~',
+                // rootPathPrefix: '~',
             },
         },
     },
-
 };

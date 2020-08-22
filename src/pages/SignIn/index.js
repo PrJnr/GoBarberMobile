@@ -1,21 +1,48 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import { View } from 'react-native';
+import {Image} from 'react-native';
 
-import Input from '~/components/Input'
-import Button from '~/components/Button'
-import Background from '~/components/background'
+import logo from '~/assets/logo.png';
 
-// import { Container } from './styles';
+import Background from '~/components/background';
 
-const SignIn = () => {
-  return (
-      <Background>
-          <View />
+import {
+    Container,
+    Form,
+    FormInput,
+    SubmitButton,
+    SignLink,
+    SignLinkText,
+} from './styles';
 
-          <Input icon="call" style={{marginTop: 30}} placeholder="Digite seu nome"/>
-          <Button> ACESSAR </Button>
+export default function SignIn({navigation}) {
+    return (
+        <Background>
+            <Container>
+                <Image source={logo} />
+                <Form>
+                    <FormInput
+                        icon="mail-outline"
+                        keyboard="email-address"
+                        autoCorrect={false}
+                        autoCapitalize="none"
+                        placeholder="Digite seu e-mail"
+                    />
+                    <FormInput
+                        icon="lock-outline"
+                        secureTextEntry
+                        placeholder="Digite sua senha secreta"
+                    />
+
+                    <SubmitButton onPress={() => {}}>Acessar</SubmitButton>
+                </Form>
+                <SignLink
+                    onPress={() => {
+                        navigation.navigate('SignUp');
+                    }}>
+                    <SignLinkText>Criar conta gratuita</SignLinkText>
+                </SignLink>
+            </Container>
         </Background>
-  );
+    );
 }
-
-export default SignIn;

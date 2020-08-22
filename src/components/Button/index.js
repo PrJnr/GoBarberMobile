@@ -1,6 +1,6 @@
-import React from '~/components/Button/node_modules/react';
+import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import PropTypes from '~/components/Button/node_modules/prop-types'
+import PropTypes from 'prop-types'
 
 import { Container, Text} from './styles';
 
