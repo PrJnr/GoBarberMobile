@@ -7,11 +7,11 @@ import {Provider} from 'react-redux';
 import {NavigationContainer} from '@react-navigation/native';
 import {store, persistor} from './store';
 
-import Routes from './routes';
+import App from './App';
 
 // import { Container } from './styles';
 
-const src = () => {
+const Index = () => {
     return (
         <NavigationContainer>
             <Provider store={store}>
@@ -20,11 +20,11 @@ const src = () => {
                         barStyle="light-content"
                         backgroundColor="#7159c1"
                     />
-                    <Routes />
+                    <App />
                 </PersistGate>
             </Provider>
         </NavigationContainer>
     );
 };
 
-export default src;
+export default Index;
