@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, {useEffect, useState} from 'react';
+import {withNavigationFocus} from 'react-navigation';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -57,11 +58,11 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
-
 Dashboard.navigationOptions = {
     tabBarLabel: 'Agendamentos',
     tabBarIcon: ({tintColor}) => (
         <Icon name="event" size={20} color={tintColor} />
     ),
 };
+
+export default withNavigationFocus(Dashboard);

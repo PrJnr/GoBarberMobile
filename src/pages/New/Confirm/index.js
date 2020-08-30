@@ -51,8 +51,6 @@ const Confirm = ({navigation}) => {
     );
 };
 
-export default Confirm;
-
 Confirm.navigationOptions = (navigation) => ({
     title: 'Confirmar Agendamento',
     headerLeft: () => (
@@ -64,3 +62,5 @@ Confirm.navigationOptions = (navigation) => ({
         </TouchableOpacity>
     ),
 });
+
+export default Confirm;

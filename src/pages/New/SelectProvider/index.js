@@ -50,8 +50,6 @@ const SelectProvider = ({navigation}) => {
     );
 };
 
-export default SelectProvider;
-
 SelectProvider.navigationOptions = ({navigation}) => ({
     title: 'Selecione um Prestador',
     headerLeft: () => (
@@ -64,3 +62,5 @@ SelectProvider.navigationOptions = ({navigation}) => ({
     ),
 });
 // NavigationOption pode retornar um objeto, e pegar o parametro navigation para navegar
+
+export default SelectProvider;

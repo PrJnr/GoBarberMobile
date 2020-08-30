@@ -58,8 +58,6 @@ const SelectDateTime = ({navigation}) => {
     );
 };
 
-export default SelectDateTime;
-
 SelectDateTime.navigationOptions = (navigation) => ({
     title: 'Selecione um Horário',
     headerLeft: () => (
@@ -71,3 +69,5 @@ SelectDateTime.navigationOptions = (navigation) => ({
         </TouchableOpacity>
     ),
 });
+
+export default SelectDateTime;
