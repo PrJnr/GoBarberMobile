@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, {useState, useMemo} from 'react';
 import {format} from 'date-fns';
 import pt from 'date-fns/locale/pt';

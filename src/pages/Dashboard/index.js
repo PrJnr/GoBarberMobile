@@ -11,17 +11,20 @@ import {Container, Title, List} from './styles';
 
 import Appointment from '~/components/appointment';
 
-const Dashboard = () => {
+const Dashboard = ({isFocused}) => {
     const [appointments, setAppointments] = useState([]);
+
+    async function loadAppointments() {
+        const response = await api.get('appointments');
+
+        setAppointments(response.data);
+    }
+
     useEffect(() => {
-        async function loadAppointments() {
-            const response = await api.get('appointments');
-
-            setAppointments(response.data);
+        if (isFocused) {
+            loadAppointments();
         }
-
-        loadAppointments();
-    }, []);
+    }, [isFocused]);
 
     async function handleCancel(id) {
         const response = await api.delete(`appointments/${id}`);
