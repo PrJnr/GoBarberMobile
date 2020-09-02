@@ -24,7 +24,7 @@ const SelectProvider = ({navigation}) => {
             <Container>
                 <ProvidersList
                     data={providers}
-                    keyExtractor={(provider) => String(provider.id)}
+                    keyExtractor={(item) => String(item.id)}
                     renderItem={(
                         {item}, // Item contem todos os dados de Provider
                     ) => (
@@ -36,8 +36,8 @@ const SelectProvider = ({navigation}) => {
                             }>
                             <Avatar
                                 source={{
-                                    uri: item.provider.avatar
-                                        ? item.provider.avatar.url
+                                    uri: item.avatar
+                                        ? item.avatar.url
                                         : `https://api.adorable.io/avatar/50/${item.name}.png`,
                                 }}
                             />

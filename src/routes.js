@@ -1,9 +1,6 @@
 import React from 'react'; // Precisa do react para conseguir trabalhar com JSX
-import {
-    createAppContainer,
-    createSwitchNavigator,
-    createStackNavigator,
-} from 'react-navigation';
+import {createAppContainer, createSwitchNavigator} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 

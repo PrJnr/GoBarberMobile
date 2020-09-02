@@ -8,7 +8,7 @@ export const ProvidersList = styled.FlatList.attrs({
     showsVerticalScrollIndicator: false,
     numColumns: 2,
 })`
-    magin-top: 60px;
+    margin-top: 60px;
     padding: 0 20px;
 `;
 
