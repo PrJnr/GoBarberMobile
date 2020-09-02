@@ -50,7 +50,7 @@ const Profile = () => {
     }
 
     function handleLogout() {
-        dispatch(signOut());
+        dispatch(signOut);
     }
 
     return (
