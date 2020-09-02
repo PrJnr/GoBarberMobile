@@ -3,17 +3,17 @@ Aplicativo para agendamento de barbearia desenvolvido em aula no Bootcamp GoStac
 
 ### Agendamentos:
 <h1 align="center">
-    <img alt="Dashboard" src="./src/img/goBarber (1).png"  />
+    <img alt="Dashboard" src="./src/img/goBarber (1).jpeg" width="350px" height="500" />
 </h1>
 
 ### Agendar novo horário:
 <h1 align="center">
-    <img alt="Novo agendamento" src="./src/img/goBarber (2).png"  />
+    <img alt="Novo agendamento" src="./src/img/goBarber (2).jpeg" width="350px" height="500" />
 </h1>
 
 ### Perfil:
 <h1 align="center">
-    <img alt="Perfil do Usuario" src="./src/img/goBarber (3).png"  />
+    <img alt="Perfil do Usuario" src="./src/img/goBarber (3).jpeg" width="350px" height="500"  />
 </h1>
 
 
